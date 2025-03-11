@@ -17,7 +17,6 @@ body{
 .container{
     height: 60vh;
     width: 80vw;
-    /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
 }
@@ -25,7 +24,6 @@ body{
 .title{
     height: 20vh;
     width: 100%;
-    /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,7 +54,11 @@ hr{
 .pass{
     height: 40px;
     width: 30vw;
-    /* border: 2px solid; */
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .copy{
@@ -65,12 +67,18 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid; */
+    cursor: pointer;
+    
 }
 
 .copy img{
     height: 80%;
     width: 80%;
+}
+
+.copy:hover{
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out;
 }
 
 button{
@@ -85,12 +93,16 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #017c4bd6;
 }
 
 button :first-child{
     height: 20px;
     width: 20px;
-    /* border: 1px solid white; */
 }
 
 button img{
@@ -101,6 +113,20 @@ button img{
 button :nth-child(2){
     height: 20px;
     width: 180px;
-    /* border: 1px solid white; */
     font-size: 18px;
+}
+
+.msg{
+    height: 30px;
+    width: 80px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #017c4a;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color: white;
+    display: none;
 }
